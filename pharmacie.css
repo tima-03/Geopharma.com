@@ -1,0 +1,158 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+
+.navbar{
+    width: 1200px;
+    height: 60px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;  
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #0aa89b;
+    font-size: xx-large;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+
+.menu{
+    
+
+    margin-top: 40px;
+    padding: 0px;
+    float: left;
+    height: 200px;
+    flex: center;
+   
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    
+}
+#menu-account {
+    display: none;
+    position: absolute;
+    transition: all .4s ease-in-out;
+    background: #fff;
+    top: 5.4rem;
+    right: 1.6rem;
+    width: 28rem;
+    border-radius: 5px;
+    padding: 24px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,.2);}
+ ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial;
+  font-size: larger;
+    font-weight: bold;
+    transition: 0.4s ease-in-out; 
+}
+
+ul li a:hover{
+    color: #3083ffdb;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.1),rgba(0,0,0,0.1)50%),url(Capturephar.PNG);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.inscription{
+  
+    width: 400px;
+    height: auto;
+   
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    float: left;
+   font-size: small;
+    margin: left 10px;;
+    
+}
+
+.search{
+    
+    width:100%;
+   
+    margin-right: 10px;
+    display: flex;
+    position: relative;
+    
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-right: 400px;
+    margin-top: 20px;
+  
+    
+}
+
+.srch{
+    font-family: '  Times New Roman';
+    width: 300px;
+    height: 40px;
+    background: transparent ;
+    border: 1px solid #fff;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+   border-radius: 60px;
+}
+
+.icon-mylocation_outlined {
+    position: absolute;
+    right: 15px!important;
+    z-index: 20;
+    top: 13px;
+    width: 20px!important;
+    color: #b3b3b3;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #fff;
+    margin-top: 13px;
+    color: #000000;
+    font-size: 15px;
+   border-radius: 60px;
+}
+.btn:focus{
+ outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+

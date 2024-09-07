@@ -1,0 +1,85 @@
+*{
+    border:none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 109vh;
+    background-color: blueviolet;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgb(43, 156, 248), rgb(87, 188, 131));
+
+}
+nav{
+    width: 100%;
+    height: 80px;
+   display:flex ;
+   justify-content:space-between;
+   align-items: center;
+   background-color: rgba(250, 250, 250, 0.312);
+   position: fixed;
+   top: 0px;
+}
+nav h2, img{
+    margin: 10px 40px;
+}
+form{
+   width: 60%;
+   height: 350px;
+   max-width: 400px;
+   background-color: rgba(240, 248, 255, 0.443);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 18px;
+   box-shadow: 1px 1px 190px rgb(3, 14, 23);
+
+}
+form input, select{
+    width: 80%;
+    height: 32px;
+    margin: 7px;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+    
+}
+form a{
+    position: relative;
+    top :50px;
+    color: aliceblue;
+}
+form a :hover{
+    color: blueviolet;
+}
+form .btn{
+    width: 90px;
+    background-color: rgb(203, 254, 62);
+   
+}
+.creat{
+    max-width: 600px;
+    height: 500px;
+
+}
+.creat input{
+    margin: 12px;
+}
+.form h3{
+   margin: 0px 0px 15px;
+   color: rgb(246, 11, 11);
+}
+.link a{
+    margin: 0px 25px;
+}
+.creat_compt{
+    margin: 10px ;
+}

@@ -1,0 +1,374 @@
+
+body{
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    position: relative;
+    background-image: linear-gradient(90deg, rgb(43, 156, 248), rgb(87, 188, 131));
+
+}
+.contuner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+}
+img{
+    background-color: rgb(70, 72, 73);
+    width: 200px;
+    height: auto;
+    margin: 30px;
+    margin-top: 80px;
+}
+.info{
+    width: 60%;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info form{
+    width: 100%;
+    height: auto;
+}
+.info input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 25px;
+     font-weight: bold;
+     outline: none;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.inp input{
+    width: 150px;
+    margin: 20px 40px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.logout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(254, 21, 21);
+    direction: ltr;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    z-index: 99px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logout h2{
+    margin: 5px 10px;
+}
+.logout img{
+    background-color: transparent;
+    margin: 5px 10px;
+    width: 35px;
+    max-height: 35px;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    z-index: 99px;
+    margin: 0px;
+}
+nav a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    text-decoration: none;
+    direction: rtl;
+    color: rgb(255, 255, 255);
+    background-color: rgb(63, 245, 129);
+    padding: 9px 10px;
+    margin: 5px;
+}
+nav img{
+    background-color: transparent;
+    width:40px ;
+    height: auto;
+    margin: 5px;
+}
+
+.add{
+    width: 30px;
+    height: 30px;
+   display: flex;
+   justify-content: center;
+   
+    position: fixed;
+    top: 25px;
+    right: 8%;
+    cursor: pointer;
+    z-index: 10;
+}
+.add img{
+    width: 55px;
+    height: 50px;
+    background-color: transparent;
+}
+.pharms{
+    width: 120%;
+    padding-top: 90px ;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: center;
+    justify-items: center;
+    grid-column-gap:2px  ;
+    grid-row-gap:10px ;
+    grid-auto-rows: minmax(300px , auto);
+    background-color: aqua;
+    padding: 20px;
+    
+}
+.pharm{
+    width:280px ;
+    height:390px ;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+   margin: 10px 5px ;
+    box-shadow: 1px 1px  25px rgb(42, 41, 41);
+}
+img{
+    width: auto;
+    max-width: 100%;
+    height: 180px;
+    margin-bottom: 30px;
+    background-color: beige;
+}
+.pharm a{
+    margin-top: 30px;
+}
+.show{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    
+}
+.fadd {
+    width: 80%;
+    max-width: 450px;
+    padding: 40px 10px;
+    margin: 40px;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, rgb(43, 156, 248), rgb(87, 188, 131));
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    box-shadow: 1px 1px 190px rgb(3, 14, 23);
+    
+}
+.fadd input, select, option, .permet{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 60%;
+    min-width: 120px;
+    height: 30px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    
+    
+}
+
+.fadd input:focus{
+    transform: scale(1.08);
+    border: solid  rgb(141, 10, 248) 2px;
+}
+.fadd select:focus{
+    transform: scale(1.08);
+    border: solid  rgb(141, 10, 248) 2px;
+}
+.fadd h2{
+    margin-bottom: 20px;
+
+}
+.fadd .btnadd{
+    width: 65px;
+    margin-top: 20px;
+    background-color: rgb(78, 243, 78);
+    box-shadow: 1px 1px 10px rgb(54, 55, 54) ;
+    cursor: pointer;
+}
+.fadd img{
+    width: 40px;
+    position: relative;
+    top: 28px;
+    left: 20%;
+}
+.fadd .add_file{
+    opacity: 1;
+}
+.fadd .btnadd:hover{
+    width: 100px;
+    height: 32px;
+    box-shadow: 1px 1px 15px rgb(54, 55, 54) ;
+}
+.fadd .btnadd:hover{
+    width: 100px;
+    height: 32px;
+    box-shadow: 1px 1px 15px rgb(54, 55, 54) ;
+}
+.permet{
+    background-color: rgb(248, 245, 245,0.6);
+    border:  2px dashed rgb(27, 27, 27);
+    width: 59%;
+    min-width: 120px;
+    height: 35px;
+    margin: auto;
+    /* padding: auto; */
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inpfile{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 4;
+    cursor: pointer;
+    opacity: 0;
+}
+.permet img{
+    position: absolute;
+     top: 0px; 
+     left: 40%; 
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+.gard{
+    margin-top: 40px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+table{
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    text-align: center;
+    
+    border-spacing: 7px;
+    border-radius: 10px;
+    
+    }
+
+table th ,td{
+    height: 90px;
+    /* margin: 9px; */
+    /* border-spacing: 15px; */
+    background-color: rgb(15, 129, 244);
+    background-color: rgb(225, 226, 226);
+    border-radius: 8px;
+}
+table img{
+    width: 40px;
+    background-color: transparent;
+    margin: 0px;
+}
+.calendrier{
+    background-color: rgb(71, 74, 96);
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+}
+.calendrier .head_cal{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.calendrier table th ,td{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(15, 129, 244);
+    background-color: rgb(253, 255, 255);
+    border-radius: 8px;
+}
+tr .activ{
+    background-color: rgb(15, 129, 244);
+    color: aliceblue;
+
+}
+tr button, input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 90%;
+} 
+/* .form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+.form input{
+    margin: 20px;
+    height: 45px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(15, 129, 244);
+     cursor: pointer;
+} */
+.upd_gard{
+    margin-top: 150px;
+    width: 400px;
+    padding-top: 10px ;
+    z-index: 0px;
+    display: grid;
+    grid-template-columns: repeat(5,30%);
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    grid-column-gap:2px  ;
+    grid-row-gap:10px ;
+    grid-auto-rows: minmax(30px , auto);
+
+}

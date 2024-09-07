@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+body{
+    width: 100%;
+    height: 109vh;
+    /* background-color: bisque; */
+    background-color: rgb(63, 64, 64);
+    background-image: linear-gradient(90deg, rgb(43, 156, 248), rgb(87, 188, 131));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    
+}
+nav{
+    width: 100%;
+    height: 80px;
+   display:flex ;
+   justify-content:space-between;
+   align-items: center;
+   background-color: rgba(250, 250, 250, 0.312);
+   position: fixed;
+   top: 0px;
+}
+nav h2, img{
+    margin: 10px 40px;
+}
+.logout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(254, 21, 21);
+    direction: ltr;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    z-index: 99px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logout h2{
+    margin: 5px 10px;
+}
+.logout img{
+    background-color: transparent;
+    margin: 5px 10px;
+    width: 35px;
+    max-height: 35px;
+    
+}
+
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    position: fixed;
+    top: 30%;
+    z-index: 100px;
+}
+.edit_grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    position: fixed;
+    top: 25%;
+    z-index: 100px;
+}
+.edit_grid .activ{
+    width: 240px;
+    height: 250px;
+}
+
+a{
+    cursor: pointer;
+}
+.activ{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background-color: rgba(255, 255, 255, 0.947);
+    /* background-image: linear-gradient(90deg, rgb(254, 254, 254), rgb(168, 245, 207)); */
+
+    box-shadow: 1px 1px 100px rgb(3, 14, 23);
+    border-radius: 16px;
+
+}
+.activ img{
+    width: 150px;
+    margin-bottom: 30px ;
+    z-index: 90;
+}
+.activ div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+.contuner{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+    }
+    .pharmacier{
+        margin-top: 50px;
+        width: 90%;
+        padding-top: 90px ;
+        z-index: 0px;
+        display: flex;
+        /* grid-template-columns: repeat(3,30%); */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        /* grid-column-gap:2px  ;
+        grid-row-gap:10px ;
+        grid-auto-rows: minmax(300px , auto); */
+    }
+    .pharm{
+        width:70% ;
+        height:50px ;
+        background-color:rgb(255, 255, 255);
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-between;
+       margin: 10px 5px ;
+       padding: 5px 20px;
+        box-shadow: 1px 1px  25px rgb(42, 41, 41);
+        text-decoration: none;
+    }
+    .pharm img{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: beige;
+    }
+    .pharm a{
+        margin: 0px 20px;
+    }
+    .search{
+        width: 80%;
+        max-width: 600px;
+        height: 40px;
+        z-index: 99px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0px;
+    }
+    .search form{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search .inp_sear{
+        width: 100%;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        /* margin: 8px; */
+        background-color: rgb(190, 214, 237);
+    }
+    .btnsearch{
+        width: 90px;
+        height: 40px;
+        border-radius: 25px;
+        margin: 8px;
+        border: none;
+    }
+    .con{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    .logo img {
+      height: 60px;
+    }
+    header, nav, footer {
+            background-color: #079a66;
+            color: white;
+            padding: 5px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color:#079a66 ;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #079a66 ;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .pharmacy-logo {
+            float: left;
+            margin-left: 8px;
+            max-width: 90px;
+        }
+        .help-accordion__header {
+            background-color: #D1F2EB;
+            border: #ABEBC6;
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="Logo de la pharmacie.PNG" alt="Logo de la pharmacie">
+        </div>
+        <nav>
+          <ul>
+            <h1>GeoPharma</h1>
+         
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h2 style="text-align: center;">Comment pouvons-nous vous aider ?</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div id="section-faq" class="accordion help-accordion">
+                    <div class="help-accordion__item">
+                        <div id="heading2">
+                            <button aria-controls="collapse2" data-target="#collapse2" data-toggle="collapse" class="help-accordion__header">
+                                <p><span style="font-size:18px">Comment fonctionne l'envoi d'ordonnance ?</span></p> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#section-faq">
+                            <div class="help-accordion__body">
+                                <p><span style="font-size:11.0pt"><span style="font-family:Calibri">Voici les étapes pour déposer votre ordonnance :</span></span></p>
+                                <ul>
+                                    <li><span style="font-size:11.0pt"><span style="font-family:Calibri">Connectez-vous sur votre compte </span></span></li>
+                                    <li><span style="font-size:11.0pt"><span style="font-family:Calibri">Cliquez sur "Ma pharmacie" en haut de l'écran puis sur le bouton d'action "Envoyer une ordonnance" </span></span></li>
+                                    <li><span style="font-size:11.0pt"><span style="font-family:Calibri">Envoyez le scan ou la photo de votre ordonnance. Vous pouvez associer votre ordonnance à un message à l’attention de votre pharmacien.</span></span></li>
+                                    <li><span style="font-size:11.0pt"><span style="font-family:Calibri">Votre pharmacien reçoit et traite votre ordonnance. Il a un délai de 72H pour vous répondre. </span></span></li>
+                                    <li><span style="font-size:11.0pt"><span style="font-family:Calibri">Surveillez vos emails ou votre mobile : votre pharmacien vous informe rapidement dès que votre commande est prête. </span></span></li>
+                                </ul>
+                                <p><span style="font-size:11.0pt"><span style="font-family:Calibri">IMPORTANT : L’original de l’ordonnance devra toujours être présenté lors de la délivrance à la pharmacie.</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="help-accordion__item">
+                        <div id="heading4">
+                            <button aria-controls="collapse4" data-target="#collapse4" data-toggle="collapse" class="help-accordion__header">
+                                <p><span style="font-size:18px">Dans quel délai dois-je récupérer ma commande en officine ?</span></p>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#section-faq">
+                            <div class="help-accordion__body">
+                                <p>Vous disposez de 2 jours à compter de la date de retrait communiquée par le pharmacien pour venir retirer votre commande (envoi d'ordonnance en officine). Passé ce délai, le pharmacien ne pourra garantir la disponibilité des produits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="help-accordion__item">
+                        <div id="heading6">
+                            <button aria-controls="collapse6" data-target="#collapse6" data-toggle="collapse" class="help-accordion__header collapsed" aria-expanded="false">
+                                <p><span style="font-size:18px">Comment fonctionnent les pharmacies de garde ?</span></p> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#section-faq" style="">
+                            <div class="help-accordion__body">
+                                <p>Les pharmacies effectuent leurs gardes selon différents modes, souvent fonction de leur secteur géographique. Certaines pharmacies font leur garde "à guichet ouvert" : les coordonnées de la pharmacie de garde sont alors communiquées aux patients qui peuvent s'y présenter pour des urgences nécessitant la présentation d'une ordonnance et d'une pièce d'identité. Enfin, dans certaines zones géographiques, il peut être obligatoire de passer par le commissariat (ou autre tiers) pour être mis en relation avec la pharmacie de garde. Les instructions vous sont alors fournies sur notre site. Bon à savoir : Seuls les cas d'urgences justifient un passage par la pharmacie de garde. C'est pourquoi vous devez présenter à votre pharmacien de garde une ordonnance et une pièce d'identité.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="help-accordion__item">
+                        <div id="heading29">
+                            <button aria-controls="collapse29" data-target="#collapse29" data-toggle="collapse" class="help-accordion__header">
+                                <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:18px">Ma commande est prête, comment suis-je informé ?</span></span></p> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div id="collapse29" class="collapse" aria-labelledby="heading29" data-parent="#section-faq">
+                            <div class="help-accordion__body">
+                                <p><span style="font-size:11.0pt"><span style="font-family:Calibri">Dès que votre commande est prête, vous êtes notifié soit par mail soit par SMS selon vos paramètres sélectionnés dans votre compte. </span></span></p>
+                                <p><span style="font-size:11.0pt"><span style="font-family:Calibri">IMPORTANT : L'original de l'ordonnance devra toujours être présenté lors de la délivrance à la pharmacie.</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="banner-prefooter">
+            <div class="container">
+                <p class="banner-prefooter__content banner-prefooter__content--bold">Vous ne trouvez pas réponse à vos questions ?</p>
+                <p class="banner-prefooter__content">Contactez-nous directement à l'adresse e-mail : <a href="mailto:contact@lepharmacien.fr">contact@lepharmacien.dz</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

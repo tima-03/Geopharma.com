@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(90deg, rgb(43, 156, 248), rgb(87, 188, 131));
+
+}
+nav{
+    width: 100%;
+    height: 80px;
+   display:flex ;
+   justify-content:space-between;
+   align-items: center;
+   background-color: rgba(250, 250, 250, 0.312);
+   position: fixed;
+   top: 0px;
+}
+.contuner{
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.con{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h2, img{
+    margin: 10px 40px;
+}
+.messages{
+    width: 50%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.645);
+    z-index: 99;
+    position: fixed;
+    bottom: 10px;
+   
+  }
+  .message{
+    overflow: auto;
+    height: 540px;
+    scroll-padding-bottom: 0px;
+    scroll-behavior: smooth;
+  }
+  .message::-webkit-scrollbar{
+    width: 8px;
+    scroll-padding-bottom: 0px;
+    scroll-behavior: smooth;
+  }
+   .message::-webkit-scrollbar-to{
+    top:0;
+   }
+  .message::-webkit-scrollbar-track{
+    background-color: rgb(232, 234, 233);
+  }
+  .message::-webkit-scrollbar-thumb{
+    background-color: rgb(176, 177, 176);
+  }
+  .send{
+    width: 100%;
+    position: absolute;
+    bottom: 4px;
+    padding: auto;
+    z-index: 100;
+  }
+  .text{
+    width: 90%;
+    height: 35px;
+    margin: 7px;
+    border-radius: 5px;
+    border: none;
+  }
+  .btn_send{
+    width: 50px;
+  }
+  .said{
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    min-height:  37px;
+    background-color: rgb(137, 137, 142);
+    color: rgb(255, 255, 255);
+
+    margin: 10px;
+    padding: 5px 3px 2px 3px ;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    
+  }
+  .rest{
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    min-height:  37px;
+    background-color: rgb(75, 75, 230);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px 3px 2px 3px ;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    left: 51%;
+  }
+  .contacter{
+    z-index: 100;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align:center;
+    padding: 20px 0px;
+    position: absolute;
+  }
+  .contact{
+    width: 200px;
+    height: 85%;
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 0px;
+    right: 1px;
+    overflow: auto;
+    padding: 2px;
+  }
+  .user{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 236, 234);
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 5px 0px;
+    text-decoration: none;
+  }
+  .user img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0px;
+  }
+  .home{
+    width: 40px;
+  }
+  .logout{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(254, 21, 21);
+    direction: ltr;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    z-index: 99px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.logout h2{
+    margin: 5px 10px;
+}
+.logout img{
+    background-color: transparent;
+    margin: 5px 10px;
+    width: 35px;
+    max-height: 35px;
+    
+}

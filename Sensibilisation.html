@@ -1,0 +1,100 @@
+
+<?php
+include './connection.php';
+$parametre = ($_GET['parametre']);
+$id = ($_GET['id']);
+$sear = ($_GET['search']);
+
+session_start() ;
+$conferm = $_SESSION['conferm'];
+
+
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Sensibilisation.css">
+<title>Calendrier de Sensibilisation</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Logo de la pharmacie.PNG" alt="Logo de la pharmacie">
+    </div>
+    <nav>
+      <ul>
+        <h1>GeoPharma</h1>
+     
+      </ul>
+    </nav>
+  </header>
+  
+    
+
+<div class="container">
+  
+<?php
+if(!$id){
+                $sel_articl = "SELECT * FROM `evenment` " ; 
+                $con_articl = mysqli_query($conn,$sel_articl) ;
+                $fet_articl = mysqli_fetch_all($con_articl,MYSQLI_ASSOC) ;
+                
+               $select = "SELECT * FROM `evenment` WHERE month(date) = 6 AND day(date) in (13,14,15,16,17,18) ";
+               $result = mysqli_query($conn,$select) ;
+               $fetch = mysqli_fetch_all($result,MYSQLI_ASSOC);
+               print_r($fetch) ; ?>
+               <div class="even">
+     <?php            foreach($fetch as $fet) :
+      ?>
+      
+         <div class="event">
+               <h2><?php print_r($fet['name_even']) ;  ?></h2>
+               <img src="icons/<?php print_r($fet['name_file']) ;  ?>" alt="">
+          </div>
+            <?php  endforeach ;         ?>
+            </div>
+  <h2>Calendrier de Sensibilisation</h2>
+  <div class="grid-container">
+  <?php  
+     foreach($fet_articl as $articl): ?>
+    <div class="grid-item" >
+      <img src="icons/<?php print_r($articl['name_file']) ;?>" alt="poumon">
+      <h3><?php print_r($articl['name_even']) ;   ?></h3>
+      <a href="sensibilisation.php?id=<?php print_r($articl['id']) ;   ?>">more</a>
+    </div>
+    <?php
+  endforeach ;}else{
+    $sel_articl = "SELECT * FROM `evenment` WHERE `id` = '$id' " ; 
+    $con_articl = mysqli_query($conn,$sel_articl) ;
+    $fet_articl = mysqli_fetch_all($con_articl,MYSQLI_ASSOC) ;
+    print_r($fet_articl) ;
+  
+    ?>
+          <div class="more">
+                <h2><?php print_r($fet_articl[0]['name_even']) ;?></h2>
+                <img src="icons/<?php print_r($fet_articl[0]['name_file']) ;?>" alt="">
+                <p><?php print_r($fet_articl[0]['articl']) ;?></p>
+          </div>
+
+<?php  }   ?>
+
+</div>
+</div>
+
+<footer>
+  
+ <p>&copy; 2024 Pharmacie de Garde. Tous droits réservés.</p> 
+  
+</footer>
+</body>
+
+</html>
+
+
+
