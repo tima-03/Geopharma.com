@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
 }
 body{
     background-color: aquamarine;
@@ -29,72 +28,23 @@ nav{
 nav h2, img{
     margin: 10px 40px;
 }
-nav div {
-    width: 500px;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-nav div a{
-    color: rgb(33, 33, 33);
-    font-size: larger;
-    font-size: 25px;
-    transition: .5s;
-}
-nav div a:hover{
-    background-color: rgb(255, 255, 255);
-    padding: 7px;
-    border-radius: 12px;
-
-}
 .search{
     width: 40%;
     max-width: 400px ;
     height: 50px;
     position: fixed;
     top: 36%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-form {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 .search .get_pharm{
-    width: 50%;
+    width: 100%;
    height: 50px;
    background-color: rgb(255, 255, 255);
    background-image: linear-gradient(90deg, rgb(43, 156, 248), rgb(56, 243, 119));
-   text-decoration: none;
+
    border: none;
    border-radius: 10px;
    outline: none;
    font-size: larger;
    box-shadow: 1px 1px 20px rgb(10, 75, 155) ;
-   margin: 20px;
 
-}.search h4{
-    margin: 10px;
-    color: rgb(32, 32, 32);
-}
-.search img{
-    width: 38px;
-    position: absolute;
-    bottom: 40px;
-    left: 300px;
-
-}
-.search .location{
-    width: 100%;
-    height: 40px;
-    border-radius: 14px;
-    text-align: center;
-    font-size: 18px;
-    border: none;
 }
